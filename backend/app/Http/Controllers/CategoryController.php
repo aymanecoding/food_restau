@@ -12,7 +12,17 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return Category::all();
+        try {
+            return response()->json([
+                'success' => true,
+                'data' => Category::all(),
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Error loading categories: ' . $e->getMessage(),
+            ], 500);
+        }
     }
 
     /**
@@ -20,12 +30,28 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'description' => 'nullable|string',
-        ]);
+        try {
+            $validated = $request->validate([
+                'name' => 'required|string|max:255',
+                'description' => 'nullable|string',
+            ]);
 
-        return Category::create($request->all());
+            return response()->json([
+                'success' => true,
+                'data' => Category::create($validated),
+            ], 201);
+        } catch (\Illuminate\Validation\ValidationException $e) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Validation failed',
+                'errors' => $e->errors(),
+            ], 422);
+        } catch (\Exception $e) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Error creating category: ' . $e->getMessage(),
+            ], 500);
+        }
     }
 
     /**
@@ -58,3 +84,4 @@ class CategoryController extends Controller
         $category->delete();
         return response()->noContent();
     }
+}

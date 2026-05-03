@@ -40,6 +40,27 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        'api' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Authentication Redirects
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify the path to which the user should be redirected
+    | when they are not authenticated. This is used by the auth middleware.
+    | You may specify different paths for different guards.
+    |
+    */
+
+    'redirects' => [
+        'web' => '/login',
+        'api' => null, // No redirect for API
     ],
 
     /*

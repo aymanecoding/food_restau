@@ -1,0 +1,15 @@
+HTTP/1.1 422 Unprocessable Content
+Host: localhost:8000
+Connection: close
+X-Powered-By: PHP/8.2.12
+Cache-Control: no-cache, private
+Date: Fri, 17 Apr 2026 18:39:51 GMT
+Content-Type: application/json
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 58
+Access-Control-Allow-Origin: http://localhost:3000
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS, PATCH
+Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With, Accept, Origin, X-CSRF-TOKEN
+Access-Control-Allow-Credentials: true
+Set-Cookie: laravel_session=eyJpdiI6ImRpUkIzOWVDeWxjM1JTc1dyMnRwSlE9PSIsInZhbHVlIjoibnRrRjl6dThXUDhtY2NXYnNDWVdna1ZNNW1WNmYwenNKQU1IL2t5ME1sQ25keXBvVDNTR3g1RlpFK3ZybXBOL2x5U3FsRktTSjJhOW9hN25IRmlGVXlqakY3YzFyN21FRFQxSWZqTXcwcU1PWEt1MjhaeFo2UkNKRko3cFpsd2siLCJtYWMiOiJiYWRlZDZiYzcyOTc5ODcwZjFhYzcyMDEyZWFiZTg2ZWI2Zjk0OTRhMWE1NDFhNWRiMWNhOGI4YzdmN2EwODIwIiwidGFnIjoiIn0%3D; expires=Fri, 17 Apr 2026 20:39:51 GMT; Max-Age=7200; path=/; domain=localhost; httponly; samesite=none
+

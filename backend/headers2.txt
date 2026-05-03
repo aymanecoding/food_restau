@@ -1,0 +1,15 @@
+HTTP/1.1 401 Unauthorized
+Host: localhost:8000
+Connection: close
+X-Powered-By: PHP/8.2.12
+Cache-Control: no-cache, private
+Date: Fri, 17 Apr 2026 18:39:52 GMT
+Content-Type: application/json
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 57
+Access-Control-Allow-Origin: http://localhost:3000
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS, PATCH
+Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With, Accept, Origin, X-CSRF-TOKEN
+Access-Control-Allow-Credentials: true
+Set-Cookie: laravel_session=eyJpdiI6ImkrbDNibHNsZ05Xd0NVNlEwNndQS2c9PSIsInZhbHVlIjoiVk14bXVMZ1ZCM3FzRVN6TVFUb2N6QzRJL0RlZlRYQXBFZlhVbzlXam42eWU0NDdGVFBJUU8xaDdmcjRCaE9UQUtLekhibXlUQ0RiRGZmcTVUUXFTOFpRbVJPTkpReVdVb3VNdkNNL2JXV1NMbjN2WkEwMjRaZHNrM09VRC9Gb3MiLCJtYWMiOiJjNjVkZWIwMzY3NTM5MmI3NTQ4M2Q3M2MzYjE3OTdjN2YyZjc3YmIxY2Q1NGNmODUxNTU1Y2Y4ZWQ2Yzc2NzM4IiwidGFnIjoiIn0%3D; expires=Fri, 17 Apr 2026 20:39:52 GMT; Max-Age=7200; path=/; domain=localhost; httponly; samesite=none
+

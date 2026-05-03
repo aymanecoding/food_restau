@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('client_address')->nullable();
             $table->text('client_note')->nullable();
             $table->string('payment_method')->default('cash');
-            $table->foreignId('user_id')->nullable()->change();
         });
     }
 
@@ -28,7 +27,6 @@ return new class extends Migration
     {
         Schema::table('orders', function (Blueprint $table) {
             $table->dropColumn(['client_name', 'client_phone', 'client_address', 'client_note', 'payment_method']);
-            $table->foreignId('user_id')->nullable(false)->change();
         });
     }
 };
